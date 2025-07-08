@@ -1,107 +1,30 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
-
 body {
-  margin: 0;
-  font-family: 'Orbitron', sans-serif;
+  font-family: sans-serif;
   background: #0f1117;
   color: #fff;
+  margin: 0;
+  scroll-behavior: smooth;
 }
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 30px;
+.navbar, .footer {
   background: #1a1d26;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  padding: 20px;
+  text-align: center;
 }
 .logo {
   font-size: 24px;
   font-weight: bold;
   color: cyan;
 }
-.nav-icons {
-  display: flex;
-  align-items: center;
-}
-.search {
-  padding: 5px 10px;
-  margin-right: 10px;
-}
-.icon {
-  margin-left: 10px;
-  cursor: pointer;
-}
-.hamburger {
-  font-size: 20px;
-  margin-left: 10px;
-  cursor: pointer;
-}
-.side-menu {
-  position: fixed;
-  right: -200px;
-  top: 60px;
-  width: 200px;
-  height: 100%;
-  background: #1a1d26;
-  display: flex;
-  flex-direction: column;
-  transition: 0.3s;
-  padding: 20px;
-}
-.side-menu.open {
-  right: 0;
-}
-.side-menu a {
-  color: white;
-  text-decoration: none;
-  margin: 10px 0;
-}
-.hero {
-  padding: 100px 20px;
-  text-align: center;
-  background: linear-gradient(180deg, #0f1117, #0e1a2b);
-}
-.hero-text h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
-}
 .section {
-  padding: 80px 20px;
+  padding: 60px 20px;
   text-align: center;
-}
-.timeline {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
 }
 .card {
   background: rgba(255,255,255,0.05);
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 0 10px cyan;
-  width: 260px;
-  transition: 0.3s;
-}
-.card:hover {
-  transform: translateY(-10px);
-}
-.logos img {
-  width: 60px;
   margin: 10px;
-  filter: drop-shadow(0 0 5px cyan);
-}
-.footer {
-  background: #10131b;
-  text-align: center;
-  padding: 30px 20px;
-}
-.footer p {
-  margin: 10px 0;
-}
-.socials i {
-  font-size: 22px;
-  margin: 0 10px;
+  display: inline-block;
 }
