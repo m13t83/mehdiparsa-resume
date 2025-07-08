@@ -2,58 +2,81 @@
 <html lang="fa">
 <head>
   <meta charset="UTF-8">
-  <title>رزومه مهدی عبدی پارسا</title>
+  <title>مهدی عبدی پارسا - رزومه</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="MP1 Logo" class="logo">
-    <button id="toggle-lang">English</button>
+  <header class="top-bar">
+    <div class="left">
+      <img src="logo.png" alt="MP1 Logo" class="logo">
+    </div>
+    <div class="right">
+      <input type="text" placeholder="جستجو..." class="search-box">
+      <i class="fas fa-user icon"></i>
+      <i class="fas fa-bell icon"></i>
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
   </header>
 
-  <section id="hero">
-    <img src="profile.jpg" alt="Mahdi Parsa" class="profile">
-    <h1 data-fa="مهدی عبدی پارسا" data-en="Mahdi Abdiparsa">مهدی عبدی پارسا</h1>
-    <p data-fa="توسعه‌دهنده فول‌استک و علاقه‌مند به طراحی وب"
-       data-en="Full‑stack developer passionate about web design">
-       توسعه‌دهنده فول‌استک و علاقه‌مند به طراحی وب
-    </p>
-  </section>
+  <nav id="side-menu" class="side-menu">
+    <ul>
+      <li><a href="#hero">خانه</a></li>
+      <li><a href="#about">درباره من</a></li>
+      <li><a href="#contact">تماس</a></li>
+    </ul>
+  </nav>
 
-  <section id="about">
-    <h2 data-fa="درباره من" data-en="About Me">درباره من</h2>
-    <div class="timeline">
-      <div class="card">
-        <h3 data-fa="گذشته" data-en="Past">گذشته</h3>
-        <p data-fa="شروع علاقه‌ام به تکنولوژی از مدرسه بود. بعدها وارد فروش شدم."
-           data-en="My interest in tech started during school. Later, I entered the sales world.">
-           شروع علاقه‌ام به تکنولوژی از مدرسه بود. بعدها وارد فروش شدم.
-        </p>
+  <section id="hero" class="section">
+    <div class="hero-content">
+      <div class="profile-wrapper">
+        <div class="blur-background"></div>
+        <img src="profile.jpg" alt="Profile" class="profile">
       </div>
-      <div class="card">
-        <h3 data-fa="حال" data-en="Present">حال</h3>
-        <p data-fa="دانشجوی مدیریت کسب‌وکارم و در حال یادگیری پایتون و طراحی وب هستم."
-           data-en="Currently studying business and learning Python and web design.">
-           دانشجوی مدیریت کسب‌وکارم و در حال یادگیری پایتون و طراحی وب هستم.
-        </p>
-      </div>
-      <div class="card">
-        <h3 data-fa="آینده" data-en="Future">آینده</h3>
-        <p data-fa="می‌خوام توسعه‌دهنده حرفه‌ای و صاحب کسب‌وکار بشم."
-           data-en="Aiming to become a pro developer and entrepreneur.">
-           می‌خوام توسعه‌دهنده حرفه‌ای و صاحب کسب‌وکار بشم.
-        </p>
-      </div>
+      <h1>مهدی عبدی پارسا</h1>
+      <p>برنامه‌نویس، خلاق، و آینده‌نگر</p>
     </div>
   </section>
 
-  <section id="contact">
-    <h2 data-fa="تماس با من" data-en="Contact Me">تماس با من</h2>
-    <p><strong>📱</strong> 09025469929</p>
-    <p><strong>✉️</strong> mahdiabdim13t84@gmail.com</p>
+  <section id="about" class="section">
+    <h2>درباره من</h2>
+    <div class="timeline">
+      <div class="card">🕰️ <strong>گذشته:</strong> ورود به دنیای تکنولوژی و فروش</div>
+      <div class="card">🔵 <strong>حال:</strong> دانشجوی مدیریت، یادگیرنده پایتون و طراحی وب</div>
+      <div class="card">🚀 <strong>آینده:</strong> تبدیل شدن به توسعه‌دهنده حرفه‌ای و کارآفرین</div>
+    </div>
+    <div class="brands">
+      <img src="python.png" alt="Python">
+      <img src="youtube.png" alt="YouTube">
+    </div>
   </section>
 
-  <script src="script.js"></script>
+  <section id="contact" class="section">
+    <h2>تماس با من</h2>
+    <p>📞 09025469929</p>
+    <p>✉️ mahdiabdim13t84@gmail.com</p>
+  </section>
+
+  <footer class="footer">
+    <p>© تمامی حقوق برای مهدی عبدی پارسا محفوظ است</p>
+    <div class="footer-links">
+      <a href="#hero">خانه</a> | <a href="#about">درباره</a> | <a href="#contact">تماس</a>
+    </div>
+    <div class="socials">
+      <i class="fab fa-youtube"></i>
+      <i class="fab fa-github"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('side-menu');
+      menu.classList.toggle('open');
+    }
+  </script>
 </body>
 </html>
