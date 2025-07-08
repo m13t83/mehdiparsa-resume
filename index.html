@@ -2,69 +2,65 @@
 <html lang="fa">
 <head>
   <meta charset="UTF-8">
-  <title>مهدی عبدی پارسا - رزومه</title>
+  <title>Umpa Umpa - مهدی عبدی پارسا</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="top-bar">
-    <div class="left">
-      <img src="logo.png" alt="MP1 Logo" class="logo">
-    </div>
-    <div class="right">
-      <input type="text" placeholder="جستجو..." class="search-box">
+
+  <header class="navbar">
+    <div class="logo">MP1</div>
+    <nav class="nav-icons">
+      <input type="text" class="search" placeholder="جستجو...">
       <i class="fas fa-user icon"></i>
       <i class="fas fa-bell icon"></i>
       <div class="hamburger" onclick="toggleMenu()">
         <i class="fas fa-bars"></i>
       </div>
-    </div>
+    </nav>
   </header>
 
-  <nav id="side-menu" class="side-menu">
-    <ul>
-      <li><a href="#hero">خانه</a></li>
-      <li><a href="#about">درباره من</a></li>
-      <li><a href="#contact">تماس</a></li>
-    </ul>
-  </nav>
+  <div class="side-menu" id="menu">
+    <a href="#hero">خانه</a>
+    <a href="#about">درباره من</a>
+    <a href="#skills">مهارت‌ها</a>
+    <a href="#contact">تماس</a>
+  </div>
 
-  <section id="hero" class="section">
-    <div class="hero-content">
-      <div class="profile-wrapper">
-        <div class="blur-background"></div>
-        <img src="profile.jpg" alt="Profile" class="profile">
-      </div>
-      <h1>مهدی عبدی پارسا</h1>
-      <p>برنامه‌نویس، خلاق، و آینده‌نگر</p>
+  <section id="hero" class="hero" data-aos="fade-up">
+    <div class="hero-text">
+      <h1>من مهدی‌ام</h1>
+      <p>برنامه‌نویس خلاق، توسعه‌دهنده آینده‌نگر</p>
     </div>
   </section>
 
-  <section id="about" class="section">
+  <section id="about" class="section" data-aos="fade-left">
     <h2>درباره من</h2>
     <div class="timeline">
-      <div class="card">🕰️ <strong>گذشته:</strong> ورود به دنیای تکنولوژی و فروش</div>
-      <div class="card">🔵 <strong>حال:</strong> دانشجوی مدیریت، یادگیرنده پایتون و طراحی وب</div>
-      <div class="card">🚀 <strong>آینده:</strong> تبدیل شدن به توسعه‌دهنده حرفه‌ای و کارآفرین</div>
+      <div class="card active">🕰️ گذشته: شروع با تکنولوژی و فروش</div>
+      <div class="card">🔵 حال: در مسیر یادگیری پایتون و مدیریت</div>
+      <div class="card">🚀 آینده: ساخت مسیر خلاق و کارآفرینی دیجیتال</div>
     </div>
-    <div class="brands">
+  </section>
+
+  <section id="skills" class="section" data-aos="fade-right">
+    <h2>مهارت‌ها و برندها</h2>
+    <div class="logos">
       <img src="python.png" alt="Python">
       <img src="youtube.png" alt="YouTube">
     </div>
   </section>
 
-  <section id="contact" class="section">
+  <section id="contact" class="section" data-aos="zoom-in">
     <h2>تماس با من</h2>
     <p>📞 09025469929</p>
     <p>✉️ mahdiabdim13t84@gmail.com</p>
   </section>
 
   <footer class="footer">
-    <p>© تمامی حقوق برای مهدی عبدی پارسا محفوظ است</p>
-    <div class="footer-links">
-      <a href="#hero">خانه</a> | <a href="#about">درباره</a> | <a href="#contact">تماس</a>
-    </div>
+    <p>© تمامی حقوق محفوظ است - MP1 - Umpa Umpa</p>
     <div class="socials">
       <i class="fab fa-youtube"></i>
       <i class="fab fa-github"></i>
@@ -74,9 +70,10 @@
 
   <script>
     function toggleMenu() {
-      const menu = document.getElementById('side-menu');
-      menu.classList.toggle('open');
+      document.getElementById('menu').classList.toggle('open');
     }
   </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
