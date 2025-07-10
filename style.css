@@ -1,1 +1,34 @@
-/* استایل نسخه V4.6 */
+body {
+  background: #0e0e0e;
+  color: #eee;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  width: 50px;
+  height: auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+#hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+.profile {
+  width: 140px;
+  border-radius: 50%;
+  border: 3px solid #005f99;
+}
+button {
+  background: #005f99;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
