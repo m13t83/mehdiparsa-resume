@@ -1,19 +1,26 @@
 body {
-  background: #0e0e0e;
-  color: #eee;
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 0;
-}
-.logo {
-  width: 50px;
-  height: auto;
+  font-family: 'Vazir', sans-serif;
+  background: linear-gradient(160deg, #0d0d0d, #001f3f);
+  color: #fff;
+  scroll-behavior: smooth;
 }
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+}
+.logo {
+  width: 50px;
+}
+button {
+  background: #005f99;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 #hero {
   text-align: center;
@@ -22,13 +29,34 @@ header {
 .profile {
   width: 140px;
   border-radius: 50%;
-  border: 3px solid #005f99;
+  border: 3px solid #00aaff;
 }
-button {
-  background: #005f99;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  cursor: pointer;
-  border-radius: 4px;
+section {
+  padding: 40px 20px;
+}
+h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.timeline {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 0 10px #005f99;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+#contact {
+  background: #001a33;
+  text-align: center;
 }
